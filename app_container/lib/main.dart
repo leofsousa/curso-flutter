@@ -11,7 +11,7 @@ void main(){
       body: Container(
         child: const Column(
           children: [
-            Text("Rafinha Gay",
+            Text("Scaffold",
             style: TextStyle(
               fontSize: 20,
               color: Colors.green,
