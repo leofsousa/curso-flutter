@@ -2,29 +2,14 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(MaterialApp(
-    title: "Projeto Container",
-    home: Scaffold(
-      appBar: AppBar(
-        title: const Text("Exemplo Scaffold"),
-        backgroundColor: Colors.green,
-        ),
-      body: Container(
-        child: const Column(
-          children: [
-            Text("Scaffold",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.green,
-              letterSpacing: 0,
-              fontWeight: FontWeight.bold,
-              wordSpacing: 15,
-              decoration: TextDecoration.underline
-            ),
-            )
-          ],
-        )
+    home: Container(
+      decoration: BoxDecoration(
+        border: Border.all(width: 5, color: Colors.green)
       ),
+      child: const Image(
+        image: AssetImage("images/goku.webp"),
+        fit: BoxFit.scaleDown,
+        ),
     )
-
   ));
 }
