@@ -2,14 +2,28 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(MaterialApp(
-    home: Container(
-      decoration: BoxDecoration(
-        border: Border.all(width: 5, color: Colors.green)
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Manipulando Botões"),
+        backgroundColor: Colors.purple,
       ),
-      child: const Image(
-        image: AssetImage("images/goku.webp"),
-        fit: BoxFit.scaleDown,
-        ),
+      body: Container(
+        child: Column(
+          children: [
+            TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.purple,
+                foregroundColor: Colors.black
+              ),
+              onPressed: (){
+                print("Clicou no Botão!");
+              },
+              child: Text("Calcular"),
+            )
+          ],
+        )
+      )  
     )
-  ));
+    ,));
 }
