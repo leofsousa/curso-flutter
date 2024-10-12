@@ -6,14 +6,14 @@ void main(){
     home: Scaffold(
       appBar: AppBar(
         title: Text("Manipulando Botões"),
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.orange,
       ),
       body: Container(
         child: Column(
           children: [
             TextButton(
               style: TextButton.styleFrom(
-                backgroundColor: Colors.purple,
+                backgroundColor: Colors.orange,
                 foregroundColor: Colors.black
               ),
               onPressed: (){
